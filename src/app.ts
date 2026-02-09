@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import swaggerUi from 'swagger-ui-express';
 import dotenv from 'dotenv';
 import adminRoutes from './routes/admin';
@@ -12,6 +13,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (_req, res) => {
