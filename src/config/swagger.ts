@@ -13,6 +13,10 @@ const options = {
                 url: 'http://localhost:3000',
                 description: 'Development server',
             },
+            {
+                url: 'https://student-management-b0ad.onrender.com',
+                description: 'Production server',
+            },
         ],
         components: {
             securitySchemes: {
