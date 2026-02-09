@@ -32,4 +32,7 @@ CREATE TABLE tasks (
 CREATE INDEX idx_tasks_student_id ON tasks(student_id);
 CREATE INDEX idx_tasks_status ON tasks(status);
 
-INSERT INTO admins (email, password) VALUES ('admin@example.com', '$2b$10$XqHlz8Z8Y9Z9Z9Z9Z9Z9ZuL8K8K8K8K8K8K8K8K8K8K8K8K8K8K8K');
+-- Default admin account
+-- Email: admin@example.com
+-- Password: admin123
+INSERT INTO admins (email, password) VALUES ('admin@example.com', '$2b$10$hx6o4.j7UuuUatrmGTnZpuuoDLCJIGYY3jIVTWfgjRDEJGpgxVQW6');
